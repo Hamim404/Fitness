@@ -42,7 +42,7 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -101,15 +101,17 @@ header nav ul li a:hover {
   background-color: var(--primary-color);
   color: white;
 }
-
+header nav i {
+  display: none !important;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
 /* Hero Section */
 #hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-#hero .hero-content {
-  width: 50%;
 }
 #hero .hero-content h1 {
   font-size: 4.8rem;
@@ -171,4 +173,49 @@ header nav ul li a:hover {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  /* Header */
+  header {
+  }
+
+  /* Nav bar */
+  header nav ul {
+    display: none;
+  }
+  header nav i {
+    display: block !important;
+  }
+
+  /* Hero Section */
+  #hero {
+    flex-direction: column;
+  }
+  #hero .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  #hero .hero-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+.btn-primary {
+  padding: 16px 20px 16px 20px;
+}
+.btn-outline {
+  padding: 16px 20px 16px 20px;
+}
+
+
+  #hero .hero-img > div:first-child {
+    font-size: 0.8rem;
+    transform: translate(12rem, 2rem);
+  }
+  #hero .hero-img > div:last-child {
+    transform: translate(-1rem, -22rem);
+  }
+
 }
