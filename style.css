@@ -347,6 +347,9 @@ select {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 20px;
+ border-radius: 18px;
+background: rgba(255, 255, 255, 0.1);
+padding: 20px;
 }
 #team .image-section .box {
   height: 250px;
