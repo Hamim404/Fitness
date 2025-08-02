@@ -397,6 +397,63 @@ padding: 20px;
   margin-bottom: 10px;
 }
 
+/* Footer */
+footer{
+background: rgba(255, 255, 255, 0.1);
+margin-top: 100px;
+}
+footer .footer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 100px;
+  padding: 65px 0;
+}
+
+footer .col-1 h3{
+  font-size: 4rem;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--primary-color);
+}
+footer .col-2 h3{
+  font-size: 2rem;
+  color: white;
+}
+footer .col-2 nav ul{
+  list-style: none;
+}
+footer .col-2 nav ul li{
+  margin-top: 20px;
+}
+footer .col-2 nav ul li a{
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  
+}
+
+footer .col-3 h3{
+  font-size: 2rem;
+  color: white;
+}
+footer .col-3 nav ul{
+  list-style: none;
+}
+footer .col-3 nav ul li{
+  margin-top: 20px;
+}
+footer .col-3 nav ul li a{
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+}
+
+footer > p{
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 20px 0;
+}
+
 /* ? Responsive Styles - Max Width 576px */
 @media screen and (max-width: 576px) {
   .container {
@@ -475,5 +532,16 @@ padding: 20px;
   }
   #team .image-section {
     grid-template-columns: auto;
+  }
+
+  /* Footer */
+  footer .footer{
+  grid-template-columns: auto;
+}
+  footer .col-2{
+    margin-top: 30px;
+  }
+  footer .col-3{
+    margin-top: 30px;
   }
 }
