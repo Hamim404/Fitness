@@ -221,11 +221,13 @@ header nav i {
 #extra {
   background-color: rgb(34, 34, 34);
   border-radius: 18px;
+  padding: 40px 50px;
+  margin-top: 100px;
+}
+#extra .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 50px;
-  margin-top: 100px;
 }
 #extra .content {
   width: 50%;
@@ -254,11 +256,11 @@ header nav i {
 #bmi .content {
   max-width: 650px;
   margin: 0 auto;
+  margin-bottom: 85px;
 }
 #bmi .calculation {
   color: white;
   background: rgb(34, 34, 34);
-  margin-top: 85px;
   padding: 50px 0;
 }
 #bmi .calculation .container {
@@ -313,7 +315,7 @@ th {
   display: grid;
   grid-template-columns: 48% 48%;
   column-gap: 4%;
-  row-gap: 4%;
+  row-gap: 10px;
   grid-template-rows: auto;
   grid-template-areas:
     "input1 input2"
@@ -329,6 +331,67 @@ select {
   background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.6);
   padding: 0 20px;
+}
+
+/* Team Section */
+#team {
+  margin-top: 100px;
+}
+#team > .container > .content {
+  text-align: center;
+  margin: 0 auto;
+  width: 700px;
+  margin-bottom: 80px;
+}
+#team .image-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+#team .image-section .box {
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 18px;
+}
+#team .image-section .box::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 18px;
+}
+#team .image-section .box1 {
+  background-image: url(images/trainer1.png);
+}
+#team .image-section .box2 {
+  background-image: url(images/trainer2.png);
+}
+#team .image-section .box3 {
+  background-image: url(images/trainer3.png);
+}
+#team .image-section .box4 {
+  background-image: url(images/trainer4.png);
+}
+#team .image-section .box5 {
+  background-image: url(images/trainer5.png);
+}
+#team .image-section .box6 {
+  background-image: url(images/trainer6.png);
+}
+
+#team .image-section .box h5 {
+  color: white;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+#team .image-section .box .content {
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 /* ? Responsive Styles - Max Width 576px */
@@ -383,7 +446,7 @@ select {
   }
 
   /* Extra Section */
-  #extra {
+  #extra .container {
     flex-direction: column;
   }
   #extra .content {
@@ -401,5 +464,13 @@ select {
   }
   #bmi .calculation .calculator {
     margin-top: 40px;
+  }
+
+  /* Team Section */
+  #team > .container > .content {
+    width: auto;
+  }
+  #team .image-section {
+    grid-template-columns: auto;
   }
 }
